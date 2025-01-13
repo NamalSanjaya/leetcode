@@ -29,16 +29,15 @@ public class DungeonGame {
     public static void main(String[] args) {
         DungeonGame solver = new DungeonGame();
 
-        // Test case 1
         int[][] dungeon1 = {
                 {-2, -3, 3},
                 {-5, -10, 1},
                 {10, 30, -5}
         };
-        System.out.println(solver.calculateMinimumHP(dungeon1)); // Output: 7
+        System.out.println(solver.calculateMinimumHP(dungeon1));
 
         // Test case 2
         int[][] dungeon2 = {{0}};
-        System.out.println(solver.calculateMinimumHP(dungeon2)); // Output: 1
+        System.out.println(solver.calculateMinimumHP(dungeon2));
     }
 }

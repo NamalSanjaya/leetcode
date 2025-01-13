@@ -22,7 +22,5 @@ public class MinimumLengthString {
 
         System.out.println(solver.minLength("abaacbcb"));
         System.out.println(solver.minLength("aa"));
-        System.out.println(solver.minLength("abc"));
-        System.out.println(solver.minLength("aabba"));
     }
 }

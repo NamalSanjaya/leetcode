@@ -46,9 +46,8 @@ public class ScrambleString {
     public static void main(String[] args) {
         ScrambleString solver = new ScrambleString();
 
-        // Test cases
-        System.out.println(solver.isScramble("great", "rgeat")); // true
-        System.out.println(solver.isScramble("abcde", "caebd")); // false
-        System.out.println(solver.isScramble("a", "a")); // true
+        System.out.println(solver.isScramble("great", "rgeat"));
+        System.out.println(solver.isScramble("abcde", "caebd"));
+        System.out.println(solver.isScramble("a", "a"));
     }
 }
