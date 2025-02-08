@@ -1,3 +1,4 @@
+// DID NOT PASS ALL TEST CASES
 import java.util.*;
 
 public class DistinctColors {
