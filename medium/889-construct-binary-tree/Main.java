@@ -27,9 +27,9 @@ public class ConstructMainBinaryTree {
 
         TreeNode root = new TreeNode(preorder[preIndex++]);
 
-        if (left == right) return root; // If there's only one node, return it
+        if (left == right) return root;
 
-        int postLeftIndex = postIndexMap.get(preorder[preIndex]); // Find the left child in postorder
+        int postLeftIndex = postIndexMap.get(preorder[preIndex]);
 
         root.left = constructTree(preorder, postorder, left, postLeftIndex);
         root.right = constructTree(preorder, postorder, postLeftIndex + 1, right - 1);
