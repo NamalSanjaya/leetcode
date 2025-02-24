@@ -66,11 +66,11 @@ public class Main {
         int[][] edges1 = {{0, 1}, {1, 2}, {1, 3}, {3, 4}};
         int bob1 = 3;
         int[] amount1 = {-2, 4, 2, -4, 6};
-        System.out.println("Test Case 1: " + new Solution().mostProfitablePath(edges1, bob1, amount1));
+        System.out.println("Test 1: " + new Solution().mostProfitablePath(edges1, bob1, amount1));
 
         int[][] edges2 = {{0, 1}};
         int bob2 = 1;
         int[] amount2 = {-7280, 2350};
-        System.out.println("Test Case 2: " + new Solution().mostProfitablePath(edges2, bob2, amount2));
+        System.out.println("Test 2: " + new Solution().mostProfitablePath(edges2, bob2, amount2));
     }
 }
