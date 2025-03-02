@@ -6,9 +6,7 @@ public class CrackingTheSafe {
         StringBuilder result = new StringBuilder();
         Set<String> visited = new HashSet<>();
         String start = "0".repeat(n - 1);
-
         dfs(start, k, visited, result);
-
         result.append(start);
         return result.toString();
     }
