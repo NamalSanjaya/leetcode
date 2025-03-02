@@ -44,7 +44,7 @@ public class EscapeLargeMaze {
     public static void main(String[] args) {
         EscapeLargeMaze solver = new EscapeLargeMaze();
         System.out.println(solver.isEscapePossible(new int[][]{{0, 1}, {1, 0}}, new int[]{0, 0}, new int[]{0, 2}));
-        System.out.println(solver.isEscapePossible(new int[][]{}, new int[]{0, 0}, new int[]{999999, 999999}));
+        System.out.println(solver.isEscapePossible(new int[][]{}, new int[]{0, 0}, new int[]{99999, 99999}));
     }
 
 }
