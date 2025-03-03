@@ -54,4 +54,10 @@ public class StampingSequence {
         return count;
     }
 
+    public static void main(String[] args) {
+        StampingSequence solver = new StampingSequence();
+        System.out.println(Arrays.toString(solver.movesToStamp("abc", "ababc")));
+        System.out.println(Arrays.toString(solver.movesToStamp("abca", "aabcaca")));
+    }
+
 }
