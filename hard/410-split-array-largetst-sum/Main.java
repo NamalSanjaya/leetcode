@@ -38,4 +38,16 @@ class Solution {
 
         return true;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1 = {7, 2, 5, 10, 8};
+        int k1 = 2;
+        System.out.println(solution.splitArray(nums1, k1));
+
+        int[] nums2 = {1, 2, 3, 4, 5};
+        int k2 = 2;
+        System.out.println(solution.splitArray(nums2, k2));
+    }
 }
