@@ -21,13 +21,11 @@ class Solution {
             if (speedHeap.size() == k) {
                 speedSum -= speedHeap.poll();
             }
-
             speedHeap.add(currSpeed);
             speedSum += currSpeed;
 
             maxPerformance = Math.max(maxPerformance, speedSum * currEfficiency);
         }
-
         return (int) (maxPerformance % MOD);
     }
 }
