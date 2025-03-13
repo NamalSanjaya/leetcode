@@ -28,4 +28,20 @@ class Solution {
         }
         return (int) (maxPerformance % MOD);
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int n1 = 6, k1 = 2;
+        int[] speed1 = {2, 10, 3, 1, 5, 8};
+        int[] efficiency1 = {5, 4, 3, 9, 7, 2};
+        System.out.println(solution.maxPerformance(n1, speed1, efficiency1, k1));
+
+        int n2 = 6, k2 = 3;
+        int[] speed2 = {2, 10, 3, 1, 5, 8};
+        int[] efficiency2 = {5, 4, 3, 9, 7, 2};
+        System.out.println(solution.maxPerformance(n2, speed2, efficiency2, k2));
+
+    }
+
 }
