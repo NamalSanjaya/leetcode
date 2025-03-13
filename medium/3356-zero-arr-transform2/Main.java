@@ -30,4 +30,14 @@ public class ZeroArrayTransformationII {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        int[] nums1 = {2, 0, 2};
+        int[][] queries1 = {{0, 2, 1}, {0, 2, 1}, {1, 1, 3}};
+        System.out.println(minQueriesToZeroArray(nums1, queries1));
+
+        int[] nums2 = {4, 3, 2, 1};
+        int[][] queries2 = {{1, 3, 2}, {0, 2, 1}};
+        System.out.println(minQueriesToZeroArray(nums2, queries2));
+    }
 }
