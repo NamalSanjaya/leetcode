@@ -31,4 +31,18 @@ public class IPO {
         return w;
     }
 
+    public static void main(String[] args) {
+        IPO ipo = new IPO();
+
+        int k1 = 2, w1 = 0;
+        int[] profits1 = {1, 2, 3};
+        int[] capital1 = {0, 1, 1};
+        System.out.println(ipo.findMaximizedCapital(k1, w1, profits1, capital1));
+
+        int k2 = 3, w2 = 0;
+        int[] profits2 = {1, 2, 3};
+        int[] capital2 = {0, 1, 2};
+        System.out.println(ipo.findMaximizedCapital(k2, w2, profits2, capital2));
+    }
+
 }
