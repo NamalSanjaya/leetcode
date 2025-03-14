@@ -43,6 +43,11 @@ public class IPO {
         int[] profits2 = {1, 2, 3};
         int[] capital2 = {0, 1, 2};
         System.out.println(ipo.findMaximizedCapital(k2, w2, profits2, capital2));
+
+        int k3 = 2, w3 = 2;
+        int[] profits3 = {2, 3, 5};
+        int[] capital3 = {1, 2, 3};
+        System.out.println(ipo.findMaximizedCapital(k3, w3, profits3, capital3));
     }
 
 }
