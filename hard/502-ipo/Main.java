@@ -10,12 +10,12 @@ public class IPO {
             projects[i] = new int[]{capital[i], profits[i]};
         }
 
+        // Sort projects by capital required
         Arrays.sort(projects, (a, b) -> Integer.compare(a[0], b[0]));
 
         PriorityQueue<Integer> maxProfitHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
 
         int index = 0;
-
         for (int i = 0; i < k; i++) {
             while (index < n && projects[index][0] <= w) {
                 maxProfitHeap.offer(projects[index][1]);
@@ -28,7 +28,6 @@ public class IPO {
 
             w += maxProfitHeap.poll();
         }
-
         return w;
     }
 
