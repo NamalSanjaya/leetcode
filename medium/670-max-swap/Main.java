@@ -20,4 +20,11 @@ class Solution {
 
         return num;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int num = 2736;
+        int result = solution.maximumSwap(num);
+        System.out.println(result);
+    }
 }
