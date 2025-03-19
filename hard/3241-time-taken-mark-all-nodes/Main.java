@@ -1,3 +1,6 @@
+// This solution has time exceeding issue for test cases. If you find a better solution which
+// passes all test cases, please put here.
+
 import java.util.*;
 
 class Solution {
