@@ -49,4 +49,16 @@ class Solution {
 
         return maxTime;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int n = 7;
+        int[][] edges = {
+                {0, 1}, {0, 2}, {1, 3}, {1, 4}, {2, 5}, {2, 6}
+        };
+
+        int[] result = solution.timeToMarkAllNodes(n, edges);
+        System.out.println("Marking times: " + Arrays.toString(result));
+    }
 }
