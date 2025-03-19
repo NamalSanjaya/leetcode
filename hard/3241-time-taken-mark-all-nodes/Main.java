@@ -1,7 +1,8 @@
 import java.util.*;
 
 class Solution {
-    public int[] timeToMarkAllNodes(int n, int[][] edges) {
+    public int[] timeTaken(int[][] edges) {
+        int n = edges.length + 1;
         List<List<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
@@ -58,7 +59,7 @@ class Solution {
                 {0, 1}, {0, 2}, {1, 3}, {1, 4}, {2, 5}, {2, 6}
         };
 
-        int[] result = solution.timeToMarkAllNodes(n, edges);
+        int[] result = solution.timeTaken(n, edges);
         System.out.println("Time Taken: " + Arrays.toString(result));
     }
 }
