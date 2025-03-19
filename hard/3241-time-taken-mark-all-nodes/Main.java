@@ -59,6 +59,6 @@ class Solution {
         };
 
         int[] result = solution.timeToMarkAllNodes(n, edges);
-        System.out.println("Marking times: " + Arrays.toString(result));
+        System.out.println("Time Taken: " + Arrays.toString(result));
     }
 }
