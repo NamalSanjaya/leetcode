@@ -49,5 +49,16 @@ public class MinimumCostWalk {
         }
     }
 
+    public static void main(String[] args) {
+        int n1 = 5;
+        int[][] edges1 = {{0, 1, 7}, {1, 3, 7}, {1, 2, 1}, {2, 1, 1}};
+        int[][] query1 = {{0, 3}, {3, 4}};
+        System.out.println(Arrays.toString(minimumCost(n1, edges1, query1)));
+
+        int n2 = 3;
+        int[][] edges2 = {{0, 2, 7}, {0, 1, 15}, {1, 2, 6}, {1, 2, 1}};
+        int[][] query2 = {{1, 2}};
+        System.out.println(Arrays.toString(minimumCost(n2, edges2, query2)));
+    }
 
 }
