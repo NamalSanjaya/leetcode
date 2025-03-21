@@ -42,4 +42,17 @@ public class MinimumCostToHireKWorkers {
         }
     }
 
+    public static void main(String[] args) {
+        MinimumCostToHireKWorkers solver = new MinimumCostToHireKWorkers();
+        int[] quality1 = {10, 20, 5};
+        int[] wage1 = {70, 50, 30};
+        int k1 = 2;
+        System.out.println(solver.mincostToHireWorkers(quality1, wage1, k1));
+
+        int[] quality2 = {3, 1, 10, 10, 1};
+        int[] wage2 = {4, 8, 2, 2, 7};
+        int k2 = 3;
+        System.out.println(solver.mincostToHireWorkers(quality2, wage2, k2));
+    }
+
 }
