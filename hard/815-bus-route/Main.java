@@ -29,7 +29,7 @@ public class BusRoutes {
                 int currentStop = queue.poll();
 
                 for (int route : stopToRoutes.getOrDefault(currentStop, new ArrayList<>())) {
-                    if (visitedRoutes.contains(route)) continue; // Skip already visited routes
+                    if (visitedRoutes.contains(route)) continue;
                     visitedRoutes.add(route);
 
                     for (int stop : routes[route]) {
@@ -45,5 +45,12 @@ public class BusRoutes {
         return -1;
     }
 
+    public static void main(String[] args) {
+        BusRoutes solution = new BusRoutes();
+        int[][] routes1 = {{1, 2, 7}, {3, 6, 7}};
+        System.out.println(solution.numBusesToDestination(routes1, 1, 6));
 
+        int[][] routes2 = {{7, 12}, {4, 5, 15}, {6}, {15, 19}, {9, 12, 13}};
+        System.out.println(solution.numBusesToDestination(routes2, 15, 12));
+    }
 }
