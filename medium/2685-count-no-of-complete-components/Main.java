@@ -49,6 +49,10 @@ public class CountCompleteComponents {
         int[][] edges1 = {{0, 1}, {0, 2}, {1, 2}, {3, 4}};
         System.out.println(solution.countCompleteComponents(n1, edges1));
 
+        int n2 = 6;
+        int[][] edges2 = {{0, 1}, {0, 2}, {1, 2}, {3, 4}, {3, 5}};
+        System.out.println(solution.countCompleteComponents(n2, edges2));
+
     }
 
 }
