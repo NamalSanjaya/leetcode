@@ -29,4 +29,26 @@ class Solution {
 
         return bound;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        // Test cases
+        int[][] testCases = {
+                {5, 7, 7, 8, 8, 10},
+                {5, 7, 7, 8, 8, 10},
+                {},
+                {1},
+                {1},
+                {2, 2, 2, 2, 2},
+        };
+
+        int[] targets = {8, 6, 0, 1, 2, 2};
+
+        for (int i = 0; i < testCases.length; i++) {
+            int[] result = solution.searchRange(testCases[i], targets[i]);
+            System.out.println("Test Case " + (i + 1) + ": " + targets[i] + " -> " +
+                    "[" + result[0] + ", " + result[1] + "]");
+        }
+    }
 }
