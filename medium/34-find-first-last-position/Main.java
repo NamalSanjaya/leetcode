@@ -47,8 +47,7 @@ class Solution {
 
         for (int i = 0; i < testCases.length; i++) {
             int[] result = solution.searchRange(testCases[i], targets[i]);
-            System.out.println("Test Case " + (i + 1) + ": " + targets[i] + " -> " +
-                    "[" + result[0] + ", " + result[1] + "]");
+            System.out.println(targets[i] + " -> " + "[" + result[0] + " , " + result[1] + "]");
         }
     }
 }
