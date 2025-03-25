@@ -25,10 +25,10 @@ class Solution {
             Solution solution = new Solution();
 
             String s1 = "rabbbit", t1 = "rabbit";
-            System.out.println("Distinct Subsequences (s1, t1): " + solution.numDistinct(s1, t1));
+            System.out.println(solution.numDistinct(s1, t1));
 
             String s2 = "babgbag", t2 = "bag";
-            System.out.println("Distinct Subsequences (s2, t2): " + solution.numDistinct(s2, t2));
+            System.out.println(solution.numDistinct(s2, t2));
 
         }
 }
