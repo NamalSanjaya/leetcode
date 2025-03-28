@@ -38,6 +38,25 @@ class Solution {
 
         return 0;
     }
+
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(0);
+        root1.left = new TreeNode(0);
+        root1.left.left = new TreeNode(0);
+        root1.left.right = new TreeNode(0);
+
+        Solution solution = new Solution();
+        System.out.println("Minimum cameras: " + solution.minCameraCover(root1));
+
+        TreeNode root2 = new TreeNode(0);
+        root2.left = new TreeNode(0);
+        root2.left.left = new TreeNode(0);
+        root2.left.left.left = new TreeNode(0);
+        root2.left.left.left.left = new TreeNode(0);
+
+        solution = new Solution();
+        System.out.println("Minimum cameras: " + solution.minCameraCover(root2));
+    }
 }
 
 
