@@ -35,4 +35,23 @@ class Solution {
         memo[i][j] = maxLen;
         return maxLen;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[][] matrix1 = {
+                {9, 9, 4},
+                {6, 6, 8},
+                {2, 1, 1}
+        };
+        System.out.println(solution.longestIncreasingPath(matrix1));
+
+        int[][] matrix2 = {
+                {3, 4, 5},
+                {3, 2, 6},
+                {2, 2, 1}
+        };
+        System.out.println(solution.longestIncreasingPath(matrix2));
+
+    }
 }
