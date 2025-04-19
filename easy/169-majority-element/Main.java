@@ -24,4 +24,14 @@ class Solution {
         return 0;
     }
 
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[] arr1 =  {23, 2, 2, 2, 8, 2};
+        int[] arr2 =  {14};
+
+        System.out.println(sol.majorityElement(arr1));
+        System.out.println(sol.majorityElement(arr2));
+    }
+
+
 }
