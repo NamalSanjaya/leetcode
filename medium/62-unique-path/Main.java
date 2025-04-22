@@ -19,5 +19,9 @@ public class UniquePaths {
         return dp[m - 1][n - 1];
     }
 
-
+    public static void main(String[] args) {
+        UniquePaths solver = new UniquePaths();
+        System.out.println( solver.uniquePaths(3, 7) );
+        System.out.println( solver.uniquePaths(3, 2) );
+    }
 }
