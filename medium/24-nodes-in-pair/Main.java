@@ -26,4 +26,16 @@ public class Solution {
 
         return dummy.next;
     }
+
+    public static void main(String[] args) {
+            Solution solution = new Solution();
+
+            int[] values1 = {1, 2, 3, 4};
+            ListNode head1 = createList(values1);
+            printList(solution.swapPairs(head1));
+
+            int[] values2 = {};
+            ListNode head2 = createList(values2);
+            printList(solution.swapPairs(head2));
+    }
 }
