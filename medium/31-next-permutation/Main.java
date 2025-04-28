@@ -30,4 +30,16 @@ class Solution {
             end--;
         }
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1 = {1, 2, 3};
+        solution.nextPermutation(nums1);
+        System.out.println(Arrays.toString(nums1));
+
+        int[] nums2 = {3, 2, 1};
+        solution.nextPermutation(nums2);
+        System.out.println(Arrays.toString(nums2));
+    }
 }
